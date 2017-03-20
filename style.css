@@ -1,0 +1,600 @@
+/*********************Pamata uzstādījumi************************/
+
+/*Vispārējie uzstādījumi*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    padding-top: 50px;
+}
+
+/*Navigācijas logo*/
+.navbar-brand img {
+    position: relative;
+    display: inline;
+    top: -15px;
+    width: 50px;
+    vertical-align: middle;
+}
+
+.navbar-brand span {
+    position: relative;
+    top: -13px;
+}
+
+/*Izvēlnes login logs*/
+.login-menu {
+    min-width: 240px;
+}
+
+#login-box {
+    padding: 0 10px;
+}
+
+#login-box > * {
+    margin: 10px 0;
+}
+
+#login-box button {
+    display: block;
+    width: 100%;
+}
+
+#login-box #forget-passw {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+}
+
+/* Navigācijas Custom noformējums */
+/* navbar */
+.navbar-custom {
+    background-color: #2ecc71;
+    border-color: #27ae60;
+}
+/* title */
+.navbar-custom .navbar-brand {
+    color: #ecf0f1;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+    color: #d1ffed;
+}
+/* link */
+.navbar-custom .navbar-nav > li > a {
+    color: #ecf0f1;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+    color: #d1ffed;
+    background-color: #46d683;
+}
+.navbar-custom .navbar-nav > .active > a, 
+.navbar-custom .navbar-nav > .active > a:hover, 
+.navbar-custom .navbar-nav > .active > a:focus {
+    color: #d1ffed;
+    background-color: #27ae60;
+}
+.navbar-custom .navbar-nav > .open > a, 
+.navbar-custom .navbar-nav > .open > a:hover, 
+.navbar-custom .navbar-nav > .open > a:focus {
+    color: #d1ffed;
+    background-color: #27ae60;
+}
+/* caret */
+.navbar-custom .navbar-nav > .dropdown > a .caret {
+    border-top-color: #ecf0f1;
+    border-bottom-color: #ecf0f1;
+}
+.navbar-custom .navbar-nav > .dropdown > a:hover .caret,
+.navbar-custom .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #d1ffed;
+    border-bottom-color: #d1ffed;
+}
+.navbar-custom .navbar-nav > .open > a .caret, 
+.navbar-custom .navbar-nav > .open > a:hover .caret, 
+.navbar-custom .navbar-nav > .open > a:focus .caret {
+    border-top-color: #d1ffed;
+    border-bottom-color: #d1ffed;
+}
+/* mobile version */
+.navbar-custom .navbar-toggle {
+    border-color: #27ae60;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+    background-color: #27ae60;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+    background-color: #ecf0f1;
+}
+@media (max-width: 767px) {
+    .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+        background-color: #5bd58e;
+        color: #ecf0f1;
+    }
+    .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+        background-color: #2ecc71;
+        color: #d1ffed;
+    }
+
+    .navbar-custom .navbar-nav .open .dropdown-menu {
+        padding: 0;
+    }
+}
+
+/* footer1 */
+#footer1 {
+    background-color: gray;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#footer1 a {
+    text-decoration: none;
+}
+
+#footer1 * {
+    display: inline;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+/* footer2 */
+#footer2 .row {
+    background-color: #9b9b9b;
+    text-align: center;
+    padding: 20px;
+}
+
+#footer2 a {
+    display: inline-block;
+    margin: 0 10px;
+    outline: none;
+}
+
+/* footer3 */
+#footer3 {
+    background-color: #323232;
+    color: lightgray;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.social-btn {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
+
+.facebook-btn {
+    background-image: url("./images/social_icons/facebook_b.png");
+}
+
+.facebook-btn:hover {
+    background-image: url("./images/social_icons/facebook_w.png");
+}
+
+.twitter-btn {
+    background-image: url("./images/social_icons/twitter_b.png");
+}
+
+.twitter-btn:hover {
+    background-image: url("./images/social_icons/twitter_w.png");
+}
+
+.google-btn {
+    background-image: url("./images/social_icons/google_b.png");
+}
+
+.google-btn:hover {
+    background-image: url("./images/social_icons/google_w.png");
+}
+
+.instagram-btn {
+    background-image: url("./images/social_icons/instagram_b.png");
+}
+
+.instagram-btn:hover {
+    background-image: url("./images/social_icons/instagram_w.png");
+}
+
+.youtube-btn {
+    background-image: url("./images/social_icons/youtube_b.png");
+}
+
+.youtube-btn:hover {
+    background-image: url("./images/social_icons/youtube_w.png");
+}
+
+.email-btn {
+    background-image: url("./images/social_icons/email_b.png");
+}
+
+.email-btn:hover {
+    background-image: url("./images/social_icons/email_w.png");
+}
+
+/**************************Home sadaļa***************************/
+
+ /*Lielais attēls*/
+.jumbotron {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.jumbotron h2 {
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    left: 0%;
+    right: 0%;
+    top: 30%;
+}
+
+.author {
+    font-size: 0.5em;
+}
+
+#bg {
+    position: relative;
+}
+
+/*Offer rinda*/
+
+.offer {
+    text-align: center;
+    padding: 50px; 
+    max-width: 1000px;
+}
+
+.glyphicon-list-alt, .glyphicon-wrench, .glyphicon-thumbs-up {
+    font-size: 100px;
+    padding: 20px;
+    margin-top: 30px;
+    color: tomato;
+}
+
+/*News rinda*/
+
+.row-bg {
+    background-color: #eaeaea;
+}
+
+.news img {
+    width: 220px;
+    height: 220px;
+}
+
+.news a {
+    text-align: center;
+}
+
+.news-blog {
+    padding: 20px 0;
+}
+
+.news .side-text {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+}
+
+/**************************Side menu***************************/
+
+#side-menu {
+    padding-bottom: 30px;
+}
+
+#side-menu>li>a {
+    background-color: lightgrey;
+}
+
+#side-menu>li>a>span {
+    text-align: right;
+}
+
+#side-menu>li>ul {
+    z-index: 100;
+}
+
+#side-menu .caret-container {
+    float: right;
+}
+
+.side-menu-item a {
+    background-color: #f8f8f8;
+    padding-left: 30px !important; 
+}
+
+/**************************Technology sadaļa***************************/
+
+.right-side-image {
+    float: right;
+    height: 300px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.left-side-image {
+    float: left;
+    height: 300px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.middle-image {
+    display: block;
+    margin: 0 auto;
+    height: 300px;
+    padding: 10px 0;
+}
+
+.article-text {
+    font-size: 18px;
+    text-align: justify;
+    padding: 20px 20px;
+}
+
+.article-text ul li, .article-text ol li {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.article-text h4, .article-text h3 {
+    padding-top: 20px;
+}
+
+.photo-text {
+    display: inline;
+    font-size: 15px;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+.video {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+/**************************Gallery sadaļa***************************/
+
+.gl-div .thumbnail {
+    margin: 10px auto;
+}
+
+.gl-div .thumbnail:hover {
+    border-width: 7px;
+    border-color: lightgreen;
+}
+
+.gl-div img {
+    height: 70%;
+    width: 100%;
+}
+
+.gl-div * {
+    outline: 0;
+}
+
+/**************************CV sadaļa***************************/
+
+#cv {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+}
+
+#cv > .row {
+    margin: 30px 0;
+}
+
+.cv-table > thead > tr > th {
+    vertical-align: middle;
+}
+
+#cv-lang-table > thead > tr > th:first-child {
+    border: none;
+}
+
+.cv-icon {
+    color: #0D95D3;
+}
+
+.cv-row-title {
+    font-size: 15px;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.cv-data {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.med-font {
+    font-size: 18px;
+}
+
+.big-font {
+    font-size: 22px;
+}
+
+.blue-font {
+    color: #0E4194;
+}
+
+.lightblue-font {
+    color: #15A9E6;
+}
+
+.cv-line {
+    border-bottom: 2px solid #1093cb;
+}
+
+/**************************Sign-up sadaļa***************************/
+
+#form-container .row {
+    padding: 0 20px;
+}
+
+#form-container button {
+    width: 100%;
+}
+
+.required-sign {
+    color: red;
+}
+
+#post {
+    padding-left: 0;
+}
+
+/**************************Kontaktu sadaļa***************************/
+
+#kontakti iframe {
+    width: 100%;
+}
+
+#kontakti i {
+    margin-top: 10px;
+}
+
+/**************************Media vaicājumi***************************/
+
+@media(max-width: 342px) {
+    body {
+        padding-top: 100px;
+    }
+}
+
+@media(max-width:767px){
+    #bg {
+        width: 1000px;
+        right: 500px;
+        margin-left: 50%;
+    }
+
+    .glyphicon-list-alt, .glyphicon-wrench, .glyphicon-thumbs-up {
+        font-size: 80px;
+    }
+
+    .news-blog div:first-child, .news-blog h4 {
+        text-align: center;
+    }
+
+    .news-blog {
+        margin: 40px 0;
+    }
+
+    .article-text img {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        width: 60%;
+        height: auto;
+    }
+
+    .video {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 55%;
+    }
+
+    .video iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .gl-div .thumbnail {
+        width: 70%;
+        height: auto;
+    }
+
+    #form-container button {
+        margin: 5px 0;
+    }
+
+    .cv-row-title {
+        text-align: left !important;
+    }
+
+    .cv-right-side {
+        padding-left: 50px;
+    }
+}
+@media(min-width:768px){
+    #bg {
+        width: 1000px;
+        left: -500px;
+        margin-left: 50%;
+    }
+
+    #navigation {
+        text-align: left;
+    }
+
+    .gl-div .thumbnail {
+        width: 230px;
+        height: 230px;
+    }
+
+    #city {
+        padding-left: 0;
+    }
+}
+@media(min-width:992px){
+    #bg {
+        width: 1300px;
+        left: -650px;
+        margin-left: 50%;
+    }
+
+    .gl-div .thumbnail {
+        width: 170px;
+        height: 170px;
+    }
+}
+@media(min-width:1200px){
+    #bg {
+        width: 100%;
+        left: -50%;
+        margin-left: 50%;
+    }
+
+    .gl-div .thumbnail {
+        width: 210px;
+        height: 210px;
+    }
+}
+
+/**************************Uzdevumu lapa***************************/
+
+.well:first-child {
+    margin-top: 20px;
+}
+
+.switch-text {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.well h2 {
+    color: #1b6d85;
+}
